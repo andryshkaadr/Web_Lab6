@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.js"></script>
+    <script defer src="js/index.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><span data-section="about">Our restaurant</span></li>
+            <li>
+                <div class="dropdown">
+                    <div class="menu">Menu</div>
+                    <div class="dropdown-content">
+                        <a href="#menu">About menu</a>
+                        <a href="#menu/Neapolitan">Neapolitan pizza</a>
+                        <a href="#menu/Margarita">Margarita pizza</a>
+                </div>
+              </div>
+            </li>
+            <li><span data-section="contacts">Contacts</span></li>
+        </ul>
+    </div>
+
+    <div class="fullpage">
+
+        <div data-index="0" data-anchor="about" class="section">
+            <div class="bg" style="background-image: url(img/pexels-mathias-reding-9685242.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Restaurant "Italian"</h2>
+                <p class="text">"Italian" - is a restaurant with traditional Italian cuisine. A rich menu, celebrations and events, dishes from the chef and a wine list.</p>
+            </div>
+        </div>
+
+        <div data-index="1" class="section" data-anchor="menu" id="section2">
+            
+            <div class="slide" data-anchor="main">
+                <div class="bg" style="background-image: url(img/pexels-narda-yescas-1566837.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Our menu</h2>
+                    <p class="text">Traditional Italian cuisine is popular all over the world, thanks to such a dish as pizza. It is very diverse and in each region is unique.</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Neapolitan">
+                <div class="bg" id="bg2" style="background-image: url(img/pizza1.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Neapolitan pizza</h2>
+                    <p class="text">Neapolitan pizza is very thin and baked at high temperatures (about 400 °C) in two minutes. It can be eaten without the use of cutlery, after rolling it</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Margarita">
+                <div class="bg" id="bg3"style="background-image: url(img/pizza2.webp) "></div>
+                <div class="content">
+                    <h2 class="title">Margarita</h2>
+                    <p class="text">Pizza Margherita()- with tomatoes, mozzarella (sometimes additionally sprinkled with parmesan), olive oil and basil.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-index="2" data-anchor="contacts" class="section">
+            <div class="bg" style="background-image: url(img/pizza3.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Phone number</h2>
+                <p class="text">You can call for table reservations or order our delicious food directly to your home. We only have the best reviews.<br>+132142141972</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
